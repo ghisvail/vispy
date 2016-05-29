@@ -1,0 +1,8 @@
+Document: python-vispy-doc
+Title: VisPy Documentation
+Author: The VisPy Development Team
+Section: Programming/Python
+
+Format: HTML
+Index: /usr/share/doc/python-vispy-doc/html/index.html
+Files: /usr/share/doc/python-vispy-doc/html/*.html

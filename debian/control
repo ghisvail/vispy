@@ -1,0 +1,68 @@
+Source: python-vispy
+Maintainer: Debian Science Maintainers <debian-science-maintainers@lists.alioth.debian.org>
+Uploaders: Ghislain Antony Vaillant <ghisvail@gmail.com>
+Section: python
+Priority: optional
+Build-Depends: debhelper (>= 9),
+               dh-python,
+               fontconfig,
+               libgl1-mesa-glx | libgl1,
+               python-all,
+               python-nose,
+               python-numpy,
+               python-pytest,
+               python-setuptools,
+               python-sphinx,
+               python-sphinx-bootstrap-theme,
+               python3-all,
+               python3-nose,
+               python3-numpy,
+               python3-pytest,
+               python3-setuptools,
+               x11-xserver-utils,
+               xauth,
+               xvfb
+Standards-Version: 3.9.8
+Vcs-Browser: https://anonscm.debian.org/cgit/debian-science/packages/python-vispy.git
+Vcs-Git: https://anonscm.debian.org/git/debian-science/packages/python-vispy.git
+Homepage: http://vispy.org/
+X-Python-Version: >= 2.6
+X-Python3-Version: >= 3.3
+
+Package: python-vispy
+Architecture: all
+Depends: ${misc:Depends},
+         ${python:Depends},
+         fontconfig,
+         libjs-jquery-mousewheel
+Suggests: python-vispy-doc
+Description: interactive scientific visualization (Python 2)
+ VisPy is a Python library for interactive scientific visualization that is
+ designed to be fast, scalable, and easy to use.
+ .
+ This package provides VisPy for the Python 2 interpreter.
+
+Package: python3-vispy
+Architecture: all
+Depends: ${misc:Depends},
+         ${python3:Depends},
+         fontconfig,
+         libjs-jquery-mousewheel
+Suggests: python-vispy-doc
+Description: interactive scientific visualization (Python 3)
+ VisPy is a Python library for interactive scientific visualization that is
+ designed to be fast, scalable, and easy to use.
+ .
+ This package provides VisPy for the Python 3 interpreter.
+
+Package: python-vispy-doc
+Architecture: all
+Section: doc
+Depends: ${misc:Depends},
+         ${sphinxdoc:Depends},
+         fonts-font-awesome
+Description: documentation for VisPy
+ VisPy is a Python library for interactive scientific visualization that is
+ designed to be fast, scalable, and easy to use.
+ .
+ This package provides the documentation for VisPy.
